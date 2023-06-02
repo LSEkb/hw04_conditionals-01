@@ -3,6 +3,10 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
+        task6();
+        task7();
     }
 
     // во всех задачах подставлены произвольные данные переменных, для которых проверяется
@@ -49,6 +53,81 @@ public class Main {
     }
 
 
-    // task 4
+    public static void task4() {
+        System.out.println("Задача 4");
+        // task 4 code
+        int age = 42;
+        if (age < 2) {
+            System.out.println("Если возраст человека равен " + age + ", то ему пора спать");
+        } else if (age <= 6) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        } else if (age <= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+        } else if (age < 24) {
+            System.out.println("Если возраст человека равен " + age + ", то его место в университете");
+        } else if (age < 60) {
+            System.out.println("Если возраст человека равен " + age + ", то ему пора на работу");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ", то ему пора отдыхать");
+        }
 
+    }
+
+
+    public static void task5() {
+        System.out.println("Задача 5");
+        // task 5 code
+        int age = 14;
+        if (age >= 5 && age < 14) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослых");
+        } else if (age < 5) {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельяз кататься на аттракционе");
+        } else {
+            System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождения взрослых");
+        }
+    }
+
+
+    public static void task6() {
+        System.out.println("Задача 6");
+        // task 6 code
+        int seatPlaces = 60;
+        int totalPlaces = 102;
+        int passenger = 80;
+        if (passenger >= totalPlaces) {
+            System.out.println("В вагоне нет мест");
+        } else if (passenger < seatPlaces) {
+            System.out.println("В вагоне есть сидячие места");
+        } else {
+            System.out.println("В вагоне есть стоячие места");
+        }
+
+
+    }
+
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        // task 7 code
+        // решение для частного случая, когда все три числа не равны друг другу
+        int one = 14;
+        int two = 20;
+        int three = 18;
+
+        if (one > two) {
+            if (one > three) {
+                System.out.println("Большее из трех чисел " + one + ", " + two + ", " + three + " - число " + one);
+            } else {
+                System.out.println("Большее из трех чисел " + one + ", " + two + ", " + three + " - число " + three);
+            }
+        } else if (two > three) {
+            System.out.println("Большее из трех чисел " + one + ", " + two + ", " + three + " - число " + two);
+        } else {
+            System.out.println("Большее из трех чисел " + one + ", " + two + ", " + three + " - число " + three);
+        }
+    }
 }
+
+
+
+
